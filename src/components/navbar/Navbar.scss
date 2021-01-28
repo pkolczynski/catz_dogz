@@ -1,3 +1,4 @@
+@import '../../Style.scss';
 nav{
     width: 100%;
     height: 100px;
@@ -5,4 +6,37 @@ nav{
 
     background: #F2EFEB;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    @include grid-layout();
+    justify-items: left;
+    grid-column: 1/15;
+
+    grid-template-rows: repeat(5,20px);
+    *{
+        color: #A65437;
+    }
+}
+
+.button-cart{
+    grid-column: 11;
+    grid-row: 2/span 3;
+    margin: 0 auto;
+    padding: 0;
+    img{
+        width: 25px;
+        height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    h4{
+        margin-bottom: 0;
+        margin-top: 15%;
+    }
+    
+}
+.button-account{
+    grid-column: 13;
+    grid-row: 2/span 2;
+    margin-top: 13%;
 }

@@ -1,16 +1,20 @@
 import './DropDownButton.scss';
 const DropDownButton = (props) =>{
-    let id=''
-    if (props.type === 'psy'){
-        id='button-'+props.type;
-    }
-    else if (props.type === 'koty'){
-        id='button-'+props.type;
-    }
+    let className=props.className
+    let buttonClass = 'button-'+className
+
+    
 
     return (
-        <div id={id}><button>{props.type}</button></div>
+        <div className={className} onClick={()=>expand(className)}>
+            <button id={buttonClass}>{className}</button>
+            <h5>v</h5>
+            </div>
     )
+}
+
+function expand(type){
+    alert(type);
 }
 
 export default DropDownButton;

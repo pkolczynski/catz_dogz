@@ -1,33 +1,39 @@
+@import '../../Style.scss';
+@mixin ddb-base() {
+    grid-row: 3/ span 2;
+    padding-bottom: 0px;
+    h5{
+        text-align: center;
+        margin-top: 0px;
+        color: #A65437;
+    }
+}
+
 button{
+    background-color: inherit;
     text-transform: capitalize;
-}
-#button-koty{
-    position: absolute;
-    width: 211px;
-    height: 27px;
-    left: 80px;
-    top: 399px;
-
-    font-family: Open Sans;
-    font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
-
+    font-size: 1.2em;
     color: #A65437;
+    border: 0;
 }
-#button-koty{
-    position: absolute;
-    width: 211px;
-    height: 27px;
-    left: 188px;
-    top: 399px;
 
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
+.koty{
+    grid-column:2/3 ;
+    @include ddb-base();
 
-    color: #A65437;
+}
+.psy{
+    grid-column:3/4 ;
+    @include ddb-base();
+    
+}
+
+.button-koty{
+    background-color: blue;
+    
+}
+.button-psy{
+    background-color: red;
+    
 }

@@ -4,9 +4,9 @@ import logo from '../../resources/logo.png'
 
 const Banner = () =>{
     return (
-        <div id = "banner-wrapper">
-            <img id="banner"src={banner} alt="BANNER"/>
-            <img id="logo" src={logo} alt="LOGO"/>
+        <div className = "banner-wrapper">
+            <img className="banner"src={banner} alt="BANNER"/>
+            <img className="logo" src={logo} alt="LOGO"/>
         </div>
     )
 }
