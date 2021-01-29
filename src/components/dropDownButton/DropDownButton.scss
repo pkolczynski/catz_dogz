@@ -5,7 +5,7 @@
     h5{
         text-align: center;
         margin-top: 0px;
-        color: #A65437;
+        color: $font-main;
     }
 }
 
@@ -14,7 +14,7 @@ button{
     text-transform: capitalize;
     font-weight: bold;
     font-size: 1.2em;
-    color: #A65437;
+    color: $font-main;
     border: 0;
 }
 
